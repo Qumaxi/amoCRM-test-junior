@@ -1,0 +1,33 @@
+/*Элемент блока "Партнеры".*/
+.partners__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: url("cursor.png"), auto;
+}
+@media only screen and (min-width: 481px) {
+    .partners__item { flex-grow: 1 }
+}
+/*Высота элемента.*/
+.partners__item { height: 140px }
+@media only screen and (min-width: 481px) {
+    .partners__item { height: 120px }
+}
+/*Половины полей между элементами.*/
+@media only screen and (min-width: 481px) {
+    .partners__item { margin: 0 10px }
+}
+@media only screen and (min-width: 769px) {
+    .partners__item { margin: 0 15px }
+}
+/*При наведении курсора мыши отбрасывает тень.*/
+.partners__item:hover {
+    box-shadow:
+        0px 0px 10px #a3a3a308,
+        -3px 0px 40px #0000001a;
+}
+/*Заглушка для элемента.*/
+.partners__item_dummy { visibility: hidden }

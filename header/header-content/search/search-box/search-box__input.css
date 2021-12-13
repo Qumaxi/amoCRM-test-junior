@@ -1,0 +1,14 @@
+/*Поле ввода текста для поиска.*/
+.search-box__input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    flex-grow: 1;
+    border-style: none;
+}
+/*Текст подсказки.*/
+.search-box__input::placeholder { color: #BBC4D6 }
+/*Не палить настоящие границы поля поиска.*/
+.search-box__input:focus { outline: none }

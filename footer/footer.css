@@ -1,0 +1,26 @@
+@import 'footer-content/footer-content.css';
+/*Нижняя часть страницы.*/
+.footer {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+/*Высота нижней части.*/
+.footer { height: 1175px }
+@media only screen and (min-width: 481px) {
+    .footer { height: 495px }
+}
+@media only screen and (min-width: 769px) {
+    .footer { height: 388px }
+}
+/*Поля страницы.*/
+.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (min-width: 769px) {
+    .footer {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+}

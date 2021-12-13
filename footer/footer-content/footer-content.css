@@ -1,0 +1,29 @@
+@import 'partners/partners.css';
+/*Блок содержимого нижней части страницы.*/
+.footer-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Заголовок нижней части страницы.*/
+.footer-content__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #121920;
+}
+/*Размеры заголовка нижней части страницы.*/
+.footer-content__title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 28px;
+}
+@media only screen and (min-width: 769px) {
+    .footer-content__title {
+        height: 58px;
+        line-height: 58px;
+        font-size: 36px;
+    }
+}

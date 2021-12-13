@@ -1,0 +1,13 @@
+@import 'Fonts/Roboto.css';
+@import 'header/header.css';
+@import 'footer/footer.css';
+/*Контейнер для содержимого страницы,
+устраняет проблему зазора между
+границами документа и тега body.*/
+.container {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

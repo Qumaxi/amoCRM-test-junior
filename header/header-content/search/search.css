@@ -1,0 +1,46 @@
+@import 'search-box/search-box.css';
+/*Область поля поиска.*/
+.search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-width: 1px;
+    border-color: #EBEBF1;
+    box-sizing: border-box;
+}
+/*Высота области поля поиска.*/
+.search { height: 40px }
+@media only screen and (min-width: 481px) {
+    .search { height: 80px }
+}
+/*Узкие поля для смартфонов,
+широкие для остальных устройств.*/
+.search {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (min-width: 481px) {
+    .search {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+/*На смартфонах нижняя часть страницы
+несколько перекрывает поле поиска.*/
+.search { margin-bottom: -9px }
+@media only screen and (min-width: 481px) {
+    .search { margin-bottom: 0px }
+}
+/*Положение границы области поля поиска.*/
+.search {
+    border-top-style: solid;
+    border-right-style: none;
+}
+@media only screen and (min-width: 481px) {
+    .search {
+        border-top-style: none;
+        border-right-style: solid;
+    }
+}

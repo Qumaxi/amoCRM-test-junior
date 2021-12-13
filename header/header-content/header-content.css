@@ -1,0 +1,16 @@
+@import 'header-content__top-block.css';
+@import 'user/user__icon.css';
+@import 'user/user__profile.css';
+@import 'search/search.css';
+/*Блок содержимого верхней части страницы.*/
+.header-content {
+    display: flex;
+    flex-direction: column; /*На смартфонах шапка в столбец.*/
+}
+/*На широких устройствах шапка в строку с выравниванием.*/
+@media only screen and (min-width: 481px) {
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}

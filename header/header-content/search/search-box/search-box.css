@@ -1,0 +1,19 @@
+@import 'search-box__input.css';
+@import 'search-box__magnifier.css';
+/*Поле поиска.*/
+.search-box {
+    height: 40px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+/*Планшет или настольный компьютер
+имеют достаточно места для красивой рамки.*/
+@media only screen and (min-width: 481px) {
+    .search-box {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}

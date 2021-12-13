@@ -1,0 +1,21 @@
+/*Строка элементов.*/
+.partners__row {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /*На смартфоне - в столбец.*/
+    justify-content: space-between;
+}
+/*Обнуление полей крайних дочерних элементов строки.*/
+@media only screen and (min-width: 481px) {
+    .partners__row { margin: 0 -10px }
+}
+@media only screen and (min-width: 769px) {
+    .partners__row { margin: 0 -15px }
+}
+/*Является строкой на всех типах устройств, кроме смартфонов.*/
+@media only screen and (min-width: 481px) {
+    .partners__row {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}

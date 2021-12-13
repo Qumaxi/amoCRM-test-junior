@@ -1,0 +1,5 @@
+/*Характеристики изображения лупы в поле поиска.*/
+.search-box__magnifier { margin-right: 4px }
+@media only screen and (min-width: 481px) {
+    .search-box__magnifier { margin-left: 8px }
+}

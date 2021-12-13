@@ -1,0 +1,33 @@
+/*Профиль пользователя.*/
+.user__profile {
+    width: 149px;
+    height: 80px;
+    order: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*Для устройств, не являющихся смартфонами,
+иконка заменяется на полноценный блок профиля.*/
+.user__profile { display: none }
+@media only screen and (min-width: 481px) {
+    .user__profile { display: flex }
+}
+/*Для мониторов настольных компьютеров поля шире.*/
+.user__profile { padding-right: 20px }
+@media only screen and (min-width: 769px) {
+    .user__profile { padding-right: 135px }
+}
+    /*Имя пользователя в профиле.*/
+    .user__profile-text {
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 40px;
+        margin-right: 10px;
+        color: #768298;
+    }
+    /*Размеры аватарки пользователя.*/
+    .user__profile-avatar {
+        width: 40px;
+        height: 40px;
+    }

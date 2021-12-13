@@ -1,0 +1,30 @@
+@import 'partners__item.css';
+@import 'partners__row.css';
+/*Блок "Партнеры".*/
+.partners {
+    display: none; /*Имеются три изначально скрытые вариации блока "Партнеры".*/
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Высота блока.*/
+.partners { height: 1100px }
+@media only screen and (min-width: 481px) {
+    .partners { height: 420px }
+}
+@media only screen and (min-width: 769px) {
+    .partners { height: 300px }
+}
+/*Управление видимостью вариаций блока.*/
+.partners_phone { display: flex }
+.partners_tablet { display: none }
+.partners_desktop { display: none }
+@media only screen and (min-width: 481px) {
+    .partners_phone { display: none }
+    .partners_tablet { display: flex }
+    .partners_desktop { display: none }
+}
+@media only screen and (min-width: 769px) {
+    .partners_phone { display: none }
+    .partners_tablet { display: none }
+    .partners_desktop { display: flex }
+}
